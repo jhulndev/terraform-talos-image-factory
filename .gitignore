@@ -1,0 +1,31 @@
+# General
+.DS_Store
+*.pem
+*.log
+*.bak
+
+# IDE specific
+.vscode/
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Terraform lock files
+.terraform.lock.hcl
+
+# Terraform directories
+.terraform/
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Explicitely ignored Terraform files
+*gitignore*.tf
+
+# Local Only
+*local*
+*.tfvars
+
