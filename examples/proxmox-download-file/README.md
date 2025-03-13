@@ -38,5 +38,8 @@ Source Usage: [root](../../)
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_pve_file_id"></a> [pve\_file\_id](#output\_pve\_file\_id) | The disk image to use to boot Proxmox VMs. |
+| <a name="output_installer"></a> [installer](#output\_installer) | Use this installer image for upgrades. |
 <!-- END_TF_DOCS -->
