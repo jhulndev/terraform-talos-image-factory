@@ -14,6 +14,7 @@ will check that selected versions and overlays are valid.
 
 ## Examples
 - [Version Selection](examples/version-selection/)
+- [Proxmox Download File](examples/proxmox-download-file/)
 
 
 <!-- BEGIN_TF_DOCS -->
