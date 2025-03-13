@@ -99,8 +99,8 @@ locals {
   # Format the overlay info into what is expected for the schematic
   overlay_info = one(flatten(data.talos_image_factory_overlays_versions.this[*].overlays_info[*]))
   overlay = local.overlay_info != null ? {
-    image   = local._overlay_info.ref
-    name    = local._overlay_info.name
+    image   = local.overlay_info.ref
+    name    = local.overlay_info.name
     options = var.overlay.options
   } : null
 }
