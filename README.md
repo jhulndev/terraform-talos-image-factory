@@ -15,6 +15,7 @@ will check that selected versions and overlays are valid.
 ## Examples
 - [Version Selection](examples/version-selection/)
 - [Proxmox Download File](examples/proxmox-download-file/)
+- [Raspberry Pi Image](examples/raspberry-pi-image/)
 
 
 <!-- BEGIN_TF_DOCS -->
@@ -57,8 +58,8 @@ No modules.
 | <a name="input_meta"></a> [meta](#input\_meta) | Allows to set initial Talos META | <pre>list(object({<br/>    key   = string<br/>    value = string<br/>  }))</pre> | `[]` | no |
 | <a name="input_secureboot"></a> [secureboot](#input\_secureboot) | The `secureboot` configuration, only applies to SecureBoot images. | `any` | `null` | no |
 | <a name="input_architecture"></a> [architecture](#input\_architecture) | The platform architecture for which the URLs are generated. | `string` | `"amd64"` | no |
-| <a name="input_platform"></a> [platform](#input\_platform) | The platform for which the URLs are generated.<br/>One of `platform` or `sbc` must be provided. | `string` | `null` | no |
-| <a name="input_sbc"></a> [sbc](#input\_sbc) | The SBC's (Single Board Computers) for which the URLs are generated.<br/>One of `platform` or `sbc` must be provided. | `string` | `null` | no |
+| <a name="input_platform"></a> [platform](#input\_platform) | The platform for which the URLs are generated.<br/>One of `platform` or `sbc` must be provided.<br/>See the provider for options: [talos\_image\_factory\_urls](https://registry.terraform.io/providers/siderolabs/talos/latest/docs/data-sources/image_factory_urls#platform-1) | `string` | `null` | no |
+| <a name="input_sbc"></a> [sbc](#input\_sbc) | The SBC's (Single Board Computers) for which the URLs are generated.<br/>One of `platform` or `sbc` must be provided.<br/>See the provider for options: [talos\_image\_factory\_urls](https://registry.terraform.io/providers/siderolabs/talos/latest/docs/data-sources/image_factory_urls#sbc-1 | `string` | `null` | no |
 
 ## Outputs
 
