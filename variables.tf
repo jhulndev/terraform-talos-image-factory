@@ -109,6 +109,7 @@ variable "platform" {
   description = <<-EOT
     The platform for which the URLs are generated.
     One of `platform` or `sbc` must be provided.
+    See the provider for options: [talos_image_factory_urls](https://registry.terraform.io/providers/siderolabs/talos/latest/docs/data-sources/image_factory_urls#platform-1)
   EOT
 }
 
@@ -119,5 +120,6 @@ variable "sbc" {
   description = <<-EOT
     The SBC's (Single Board Computers) for which the URLs are generated.
     One of `platform` or `sbc` must be provided.
+    See the provider for options: [talos_image_factory_urls](https://registry.terraform.io/providers/siderolabs/talos/latest/docs/data-sources/image_factory_urls#sbc-1
   EOT
 }
