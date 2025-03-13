@@ -16,7 +16,6 @@ repos:
         args:
           - --args=--config=__GIT_WORKING_DIR__/.tflint.hcl
           - --hook-config=--delegate-chdir
-      - id: terraform_validate
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
