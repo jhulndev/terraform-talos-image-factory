@@ -5,7 +5,7 @@
     [
       "@semantic-release/commit-analyzer",
       {
-        "preset": "conventionalcommits"
+        "preset": "conventionalcommits",
         "releaseRules": [
           { "type": "docs", "scope": "readme", "release": "patch" },
           { "type": "docs", "scope": "variables", "release": "patch" },
