@@ -1,6 +1,20 @@
 # Talos Image Factory Terraform module
 
-Terraform module to generate Talos Image Factory URLs
+Terraform module to generate Talos Image Factory URLs.
+
+This will effectively replicate creating the schematic ids and version
+urls that can be created through https://factory.talos.dev/,
+allowing for the full provisioning of Talos VMs in virtualized
+or cloud environments without having to pull these urls separately.
+
+This module will also provide some flexibiliy in how Talos versions can be
+pulled (see [Version Selection](examples/version-selection/main.tf)), and
+will check that selected versions and overlays are valid.
+
+
+## Examples
+- [Version Selection](examples/version-selection/)
+
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -42,8 +56,8 @@ No modules.
 | <a name="input_meta"></a> [meta](#input\_meta) | Allows to set initial Talos META | <pre>list(object({<br/>    key   = string<br/>    value = string<br/>  }))</pre> | `[]` | no |
 | <a name="input_secureboot"></a> [secureboot](#input\_secureboot) | The `secureboot` configuration, only applies to SecureBoot images. | `any` | `null` | no |
 | <a name="input_architecture"></a> [architecture](#input\_architecture) | The platform architecture for which the URLs are generated. | `string` | `"amd64"` | no |
-| <a name="input_platform"></a> [platform](#input\_platform) | The platform for which the URLs are generated. | `string` | `null` | no |
-| <a name="input_sbc"></a> [sbc](#input\_sbc) | The SBC's (Single Board Computers) for which the URLs are generated. | `string` | `null` | no |
+| <a name="input_platform"></a> [platform](#input\_platform) | The platform for which the URLs are generated.<br/>One of `platform` or `sbc` must be provided. | `string` | `null` | no |
+| <a name="input_sbc"></a> [sbc](#input\_sbc) | The SBC's (Single Board Computers) for which the URLs are generated.<br/>One of `platform` or `sbc` must be provided. | `string` | `null` | no |
 
 ## Outputs
 

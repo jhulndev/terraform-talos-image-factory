@@ -106,12 +106,18 @@ variable "platform" {
   type        = string
   nullable    = true
   default     = null
-  description = "The platform for which the URLs are generated."
+  description = <<-EOT
+    The platform for which the URLs are generated.
+    One of `platform` or `sbc` must be provided.
+  EOT
 }
 
 variable "sbc" {
   type        = string
   nullable    = true
   default     = null
-  description = "The SBC's (Single Board Computers) for which the URLs are generated."
+  description = <<-EOT
+    The SBC's (Single Board Computers) for which the URLs are generated.
+    One of `platform` or `sbc` must be provided.
+  EOT
 }

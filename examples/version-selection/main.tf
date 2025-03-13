@@ -1,3 +1,12 @@
+/**
+ * # Version Selection Example
+ *
+ * Source Usage: [root](../../)
+ *
+ * Provided examples show the recommended approach of specifying
+ * an exact version number, as well as using pattern matching
+ * and the `stable_only` flag to control what versions are selected.
+ */
 
 # Recommended: Select a specific version of Talos to use.
 module "lock_full_version" {
