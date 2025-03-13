@@ -6,6 +6,14 @@
       "@semantic-release/commit-analyzer",
       {
         "preset": "conventionalcommits"
+        "releaseRules": [
+          { "type": "docs", "scope": "readme", "release": "patch" },
+          { "type": "docs", "scope": "variables", "release": "patch" },
+          { "type": "docs", "scope": "outputs", "release": "patch" },
+          { "type": "docs", "scope": "examples", "release": "patch" },
+          { "type": "refactor", "release": "patch" },
+          { "scope": "no-release", "release": false }
+        ]
       }
     ],
     [
