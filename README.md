@@ -11,7 +11,6 @@ This module will also provide some flexibiliy in how Talos versions can be
 pulled (see [Version Selection](examples/version-selection/main.tf)), and
 will check that selected versions and overlays are valid.
 
-
 ## Examples
 - [Version Selection](examples/version-selection/)
 - [Proxmox Download File](examples/proxmox-download-file/)
