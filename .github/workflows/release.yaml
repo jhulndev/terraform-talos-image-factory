@@ -11,6 +11,11 @@ on:
 
 jobs:
   release:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
     name: Release
     runs-on: ubuntu-latest
     # Skip running release workflow on forks
@@ -29,4 +34,4 @@ jobs:
           extra_plugins: |
             conventional-changelog-conventionalcommits@7.0.2
         env:
-          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
